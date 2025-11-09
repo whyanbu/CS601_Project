@@ -1,0 +1,15 @@
+[
+    {"id": "0", "name": "Broccoli", "category": "vegetables"},
+    {"id": "1", "name": "Watermelon", "category": "fruits"},
+    {"id": "2", "name": "Cauliflower", "category": "vegetables"},
+    {"id": "3", "name": "Orange", "category": "fruits"},
+    {"id": "4", "name": "Tomato ", "category": "vegetables"},
+    {"id": "5", "name": "Apple", "category": "fruits"},
+    {"id": "6", "name": "Cucumber", "category": "vegetables"},
+    {"id": "7", "name": "Mango", "category": "fruits"},
+    {"id": "8", "name": "Spinach", "category": "vegetables"},
+    {"id": "9", "name": "Kiwi", "category": "fruits"},
+    {"id": "10", "name": "Banana", "category": "fruits"},
+    {"id": "11", "name": "Strawberry", "category": "fruits"},
+    {"id": "12", "name": "Carrot", "category": "vegetables"}
+]
