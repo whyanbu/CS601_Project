@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -8,9 +6,9 @@ function App() {
 
   return (
     <>
-      <h1>Hello</h1>
+      <h1 className="text-3xl font-bold underline">Hello.  This is my CS601 Term Project</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button className="rounded-sm bg-blue-200" onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
