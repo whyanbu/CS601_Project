@@ -1,71 +1,85 @@
 [
     {
-        "url": "/CS601_Project/images/metrovaartha-en_2023-10_2c5723ab-6d6d-4b79-abcf-2262c4b3a8ad_ReasiBridge_jpeg.avif",
+        "id": "1",
+        "filename": "metrovaartha-en_2023-10_2c5723ab-6d6d-4b79-abcf-2262c4b3a8ad_ReasiBridge_jpeg.avif",
         "description": "The steel arch rail bridge over the Chenab River in Reasi district",
         "category": "Bridge"
     },
     {
-        "url": "/CS601_Project/images/JD4PXKJ6UJGFZPZ44YN7GCDUQQ.avif",
+        "id": "2",
+        "filename": "JD4PXKJ6UJGFZPZ44YN7GCDUQQ.avif",
         "description": "The Çanakkale Bridge in Türkiye, selected as one of the 'Top 10 Overseas Construction Projects,' is seen in this view. /Courtesy of DL E&C",
         "category": "Bridge"
     },
     {
-        "url": "/CS601_Project/images/83220.png",
+        "id": "3",
+        "filename": "83220.png",
         "description": "VARIOKIT Balanced Cantilever Carriage System",
         "category": "Bridge"
     },
     {
-        "url": "/CS601_Project/images/FrederickDouglassCropped.jpg",
+        "id": "4",
+        "filename": "FrederickDouglassCropped.jpg",
         "description": "Frederick Douglass Memorial Bridge- Prize Bridge Award, Major Span Category",
         "category": "Bridge"
     },
     {
-        "url": "/CS601_Project/images/LongBeachCropped.jpg",
+        "id": "5",
+        "filename": "LongBeachCropped.jpg",
         "description": "Long Beach International Gateway Bridge- Prize Bridge Merit Award, Major Span Category",
         "category": "Bridge"
     },
     {
-        "url": "/CS601_Project/images/Kurobe-dam.jpg",
+        "id": "6",
+        "filename": "Kurobe-dam.jpg",
         "description": "Kurobe Dam in Toyama Prefecture, the largest dam in Japan",
         "category": "Dam"
     },
     {
-        "url": "/CS601_Project/images/Hounenike-dam.jpg",
+        "id": "7",
+        "filename": "Hounenike-dam.jpg",
         "description": "Japan’s oldest stone masonry multiple arch type Honenike Dam (Kagawa Prefecture)",
         "category": "Dam"
     },
     {
-        "url": "/CS601_Project/images/Marunuma-dam.jpg",
+        "id": "8",
+        "filename": "Marunuma-dam.jpg",
         "description": "Marunuma Dam, Gunma Prefecture, the highest bank in Japan",
         "category": "Dam"
     },
     {
-        "url": "/CS601_Project/images/Miyagase-dam.jpg",
+        "id": "9",
+        "filename": "Miyagase-dam.jpg",
         "description": "Miyagase Dam, Kanagawa Prefecture, periodically discharges for tourists",
         "category": "Dam"
     },
     {
-        "url": "/CS601_Project/images/3d-high-rise-building-complex-render.jpg",
+        "id": "10",
+        "filename": "3d-high-rise-building-complex-render.jpg",
         "description": "Urban redevelopment for the Roppongi district in Tokyo",
         "category": "Building"
     },
     {
-        "url": "/CS601_Project/images/sekyra-flowers-daniel-libeskind-housing-prague_dezeen_2364_col_5-1704x1144.jpg",
+        "id": "11",
+        "filename": "sekyra-flowers-daniel-libeskind-housing-prague_dezeen_2364_col_5-1704x1144.jpg",
         "description": "Sekyra Flowers residential complex in Prague, which comprises four angular buildings surrounding a public square.",
         "category": "Building"
     },
     {
-        "url": "/CS601_Project/images/studio-libeskind-boerentoren-office-conversion_dezeen_2364_col_3-1704x1065.jpg",
+        "id": "12",
+        "filename": "studio-libeskind-boerentoren-office-conversion_dezeen_2364_col_3-1704x1065.jpg",
         "description": "updated plans to restore and convert Antwerp's Boerentoren skyscraper into a cultural venue, which will be crowned with a glass observation deck.",
         "category": "Building"
     },
     {
-        "url": "/CS601_Project/images/melbourne-metro-tunnell-rshp-hassell-wwp-architects_dezeen_2364_col_3-1704x1136.jpg",
+        "id": "13",
+        "filename": "melbourne-metro-tunnell-rshp-hassell-wwp-architects_dezeen_2364_col_3-1704x1136.jpg",
         "description": "Anzac Station with green columns that support a timber canopy",
         "category": "Building"
     },
     {
-        "url": "/CS601_Project/images/rausing-science-centre-walters-cohen-architecture-education-uk_dezeen_2364_hero.jpg",
+        "id": "14",
+        "filename": "rausing-science-centre-walters-cohen-architecture-education-uk_dezeen_2364_hero.jpg",
         "description": "The Rausing Science Centre for a school in Canterbury, Kent, offering a contemporary take on the historic area's material palette of flint, oak and limestone.",
         "category": "Building"
     }
