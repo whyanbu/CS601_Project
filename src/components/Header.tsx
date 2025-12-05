@@ -8,7 +8,7 @@ const Header = () => {
         setOpen(false);
     };
 
-    const navItemStyle = "block p-2 md:border-none hover:text-c2 bg-c6 md:bg-white text-center";
+    const navItemStyle = "block p-2 md:border-none hover:text-c2 bg-c6 md:bg-white text-center text-xl md:text-base ";
 
     return (
         <header className="sticky top-0 z-30 bg-white shadow-md">
@@ -26,7 +26,7 @@ const Header = () => {
                     className="md:hidden p-2 rounded focus:outline-none"
                     onClick={() => setOpen(!open)}
                 >
-                    <span className="text-2xl">{open ? "✕" : "☰"}</span>
+                    <span className="text-4xl">{open ? "✕" : "☰"}</span>
                 </button>
 
                 {/* Navigation (single menu) */}
@@ -36,27 +36,27 @@ const Header = () => {
                                 ${open ? "max-h-96 opacity-100" : "max-h-0 opacity-0 md:opacity-100 md:max-h-full"}
                     `}
                 >
-                    <li>
+                    <li className="border-b border-gray-200 md:border-none">
                         <Link to="/home" className={navItemStyle} onClick={handleLinkClick}>
                             Home
                         </Link>
                     </li>
-                    <li>
+                    <li className="border-b border-gray-200 md:border-none">
                         <Link to="/resume" className={navItemStyle} onClick={handleLinkClick}>
                             Résumé
                         </Link>
                     </li>
-                    <li>
+                    <li className="border-b border-gray-200 md:border-none">
                         <Link to="/gallery" className={navItemStyle} onClick={handleLinkClick}>
                             Gallery
                         </Link>
                     </li>
-                    <li>
+                    <li className="border-b border-gray-200 md:border-none">
                         <Link to="/game" className={navItemStyle} onClick={handleLinkClick}>
                             Game
                         </Link>
                     </li>
-                    <li>
+                    <li className="border-b border-gray-200 md:border-none">
                         <Link to="/contact" className={navItemStyle} onClick={handleLinkClick}>
                             Contact
                         </Link>

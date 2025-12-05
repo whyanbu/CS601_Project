@@ -25,7 +25,7 @@ const Gallery = () => {
             <PageTitle text="Gallery" color={"c1"}/>
 
             {/* filter drop down menu */}
-            <div className="text-center md:text-right mt-10">
+            <div className="text-center font-content md:text-right mt-10">
                 <span className="pr-4">Filtered by: </span>
                 <select
                     value={filter}

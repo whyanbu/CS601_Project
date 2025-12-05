@@ -54,7 +54,7 @@ const SequenceGame = () => {
                         onDragStart={(e) => onDragStart(e, index)}
                         onDragOver={onDragOver}
                         onDrop={(e) => onDrop(e, index)}
-                        className="p-3 bg-white rounded-xl shadow cursor-move text-center font-content select-none hover:bg-gray-50"
+                        className="p-3 bg-white rounded-xl shadow cursor-move text-center font-content select-none hover:bg-gray-50 hover:cursor-grab"
                     >
                         {item}
                     </div>
@@ -62,7 +62,7 @@ const SequenceGame = () => {
             </div>
 
 
-            <button onClick={checkOrder} className="px-6 py-2 bg-c4 text-white rounded-xl shadow hover:bg-c2">
+            <button onClick={checkOrder} className="px-6 py-2 bg-c2 text-white rounded-xl shadow hover:bg-c1">
                 Check
             </button>
 
