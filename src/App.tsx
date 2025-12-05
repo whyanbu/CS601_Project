@@ -1,22 +1,36 @@
-import { useState } from 'react'
-import './App.css'
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Game from './pages/Game';
+import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
+import Resume from './pages/Resume';
+import Gallery from './pages/Gallery';
+import { ImageProvider } from './context/ImageProvider';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
 
-  return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello.  This is my CS601 Term Project</h1>
-      <div className="card">
-        <button className="rounded-sm bg-blue-200" onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-    </>
-  )
+    return (
+
+        <div>
+            <Header/>
+
+            <ImageProvider>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/home" element={<Home />} />
+                    <Route path="/game" element={<Game />} />
+                    <Route path="/resume" element={<Resume />} />
+                    <Route path="/gallery" element={<Gallery />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
+            </ImageProvider>
+
+            <Footer/>
+        </div>
+    )
 }
 
-export default App
+export default App;
