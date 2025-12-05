@@ -9,7 +9,7 @@ export const ImageProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
     useEffect(() => {
         const fetchImages = async () => {
-            const response = await fetch(`${import.meta.env.BASE_URL}data.json`);
+            const response = await fetch(`${import.meta.env.BASE_URL}images.json`);
             const data: Image[] = await response.json();
             const shuffled = shuffle<Image>(data);
             setImages(shuffled);

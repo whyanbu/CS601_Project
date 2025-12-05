@@ -82,42 +82,49 @@ const ContactForm = () => {
 
     return (
         <>
-            <form onSubmit={handleSubmit} className="max-w-180 mx-auto my-10 py-15 px-10 bg-white shadow-[4px_4px_10px_rgba(0,0,0,0.25)] font-content grid grid-cols-2 gap-y-6 gap-x-16">
-                <div className="flex flex-col">
+            <form onSubmit={handleSubmit} className="w-95/100 max-w-180 mx-auto my-10 py-15 px-10 bg-white shadow-[4px_4px_10px_rgba(0,0,0,0.25)] font-content grid grid-cols-2 gap-y-6 gap-x-16">
+                <div className="col-span-2 md:col-span-1 flex flex-col">
                     <label>First Name</label>
                     <input name="firstName" value={form.firstName} onChange={handleInputChange} type="text" className={inputStyle} />
                     {errors.firstName && (
-                        <p className="text-red-500 text-sm my-6">{errors.firstName}</p>
+                        <p className="text-red-500 text-sm">{errors.firstName}</p>
                     )}
                 </div>
-                <div className="flex flex-col">
+                <div className="col-span-2 md:col-span-1 flex flex-col">
                     <label>Last Name</label>
                     <input name="lastName" value={form.lastName} onChange={handleInputChange} type="text" className={inputStyle} />
                     {errors.lastName && (
-                        <p className="text-red-500 text-sm my-6">{errors.lastName}</p>
+                        <p className="text-red-500 text-sm">{errors.lastName}</p>
                     )}
                 </div>
-                <label className="col-span-2">Email</label>
-                <input name="email" value={form.email} onChange={handleInputChange} type="text" className={inputStyle + " col-span-2"} />
-                {errors.email && (
-                    <p className="col-span-2 text-red-500 text-sm">{errors.email}</p>
-                )}
-                <label className="col-span-2">Subject</label>
-                <input name="subject" value={form.subject} onChange={handleInputChange} type="text" className={inputStyle + " col-span-2"} />
-                {errors.subject && (
-                    <p className="col-span-2 text-red-500 text-sm">{errors.subject}</p>
-                )}
+                <div className="col-span-2 flex flex-col">
+                    <label className="col-span-2">Email</label>
+                    <input name="email" value={form.email} onChange={handleInputChange} type="text" className={inputStyle + " col-span-2"} />
+                    {errors.email && (
+                        <p className="col-span-2 text-red-500 text-sm">{errors.email}</p>
+                    )}
+                </div>
+                <div className="col-span-2 flex flex-col">
+                    <label className="col-span-2">Subject</label>
+                    <input name="subject" value={form.subject} onChange={handleInputChange} type="text" className={inputStyle + " col-span-2"} />
+                    {errors.subject && (
+                        <p className="col-span-2 text-red-500 text-sm">{errors.subject}</p>
+                    )}
+                </div>
+                <div className="col-span-2 flex flex-col">
                 <label className="col-span-2">Message</label>
                 <input name="message" value={form.message} onChange={handleInputChange} type="text" className={inputStyle + " col-span-2"} />
                 {errors.message && (
                     <p className="col-span-2 text-red-500 text-sm">{errors.message}</p>
                 )}
+                </div>
 
-                <button type="submit" className="w-20 bg-blue-600 text-white mt-6 py-2 px-4 rounded-md hover:bg-blue-700 transition">
+                <button type="submit" className="w-20 bg-c4 text-white mt-6 py-2 px-4 rounded-md hover:bg-c2 transition">
                     Send
                 </button>
             </form>
             
+            {/* Modal */}
             {showModal && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center">
                     <div className={`absolute inset-0 bg-black transition-opacity duration-300 ${animate ? "bg-opacity-50" : "bg-opacity-0"}`} />
@@ -128,7 +135,7 @@ const ContactForm = () => {
                         <p className="text-gray-700 mb-6">
                             I will get back to you very soon.
                         </p>
-                        <button onClick={handleModalClose} className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                        <button onClick={handleModalClose} className="px-4 py-2 bg-c4 text-white rounded hover:bg-c2">
                             Close
                         </button>
                     </div>

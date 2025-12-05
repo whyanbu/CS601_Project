@@ -44,7 +44,7 @@ const SequenceGame = () => {
 
     return (
         <div className="flex flex-col items-center justify-center p-6">
-            <h1 className="mt-10 text-2xl font-bold mb-4">guess the correct civil engineering project sequence!</h1>
+            <h1 className="mt-10 text-2xl font-bold mb-4 text-center">What is the correct project sequence?</h1>
 
             <div className="w-full max-w-xl space-y-2 mb-4">
                 {items.map((item, index) => (
@@ -62,13 +62,11 @@ const SequenceGame = () => {
             </div>
 
 
-            <button onClick={checkOrder} className="px-6 py-2 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700">
+            <button onClick={checkOrder} className="px-6 py-2 bg-c4 text-white rounded-xl shadow hover:bg-c2">
                 Check
             </button>
 
-            {result && (
-                <p className="mt-4 text-lg font-semibold">{result}</p>
-            )}
+            {result && <p className="mt-4 text-lg font-semibold">{result}</p>}
         </div>
     );
 };

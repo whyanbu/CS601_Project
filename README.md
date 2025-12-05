@@ -1,73 +1,151 @@
-# React + TypeScript + Vite
+# Personal Webpage of Raphael Lam
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal website built with React and TypeScript. The application presents a biography, résumé data, and a project gallery showcasing selected works.  
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features  
+Special Configuration  
+Installation  
+Usage  
+Project Structure  
 
-## React Compiler
+### Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This application is developed using React with TypeScript, scaffolded via Vite:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+npm create vite@latest CS601_Project -- --template react-ts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Key technologies and features include:  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Client-side Routing:  
+Implemented using React Router to provide multi-page navigation within a single-page application environment.  
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- UI and Styling:  
+Built with Tailwind CSS for rapid UI development and responsive layouts. Component-specific CSS files are omitted in favor of utility-first styling.  
+
+- React Hooks and Context:  
+Demonstrates the use of props, useState, and useEffect hooks throughout components.  
+The Gallery page utilizes the createContext and useContext APIs to store and share image data globally, avoiding reloading of images when navigating between pages.  
+
+- Remote Data Integration:  
+Résumé data is hosted on Firebase, accessed via a RESTful API developed using Express.js and deployed on Vercel.  
+The API source repository is available at:  
+https://github.com/whyanbu/CS601_Project_api  
+
+### Special Configuration
+
+Since GitHub Pages does not support client-side routing, a fallback mechanism is added to handle 404 redirects properly.  Before deploying, replicate index.html as 404.html inside the output directory:  
+
+```
+cp dist/index.html dist/404.html
+```
+This configuration ensures proper navigation for direct links to nested routes.  
+
+### Installation
+
+Clone the repository and install dependencies:  
+
+```
+git clone https://github.com/whyanbu/CS601_Project.git
+cd CS601_Project
+npm instal
+```
+
+To start the application locally:  
+```
+npm run dev
+```
+
+### Usage
+
+- Local Development
+
+Start the development server:
+```
+npm run dev
+```
+
+- Production Build
+
+Build the project for deployment:
+```
+npm run build
+```
+
+- GitHub Pages Deployment
+
+Deploy the built files to GitHub Pages:
+```
+npm run deploy
+```
+
+### Project Structure
+
+```
+CS601_Project
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── public
+│   ├── constructionOrder.json
+│   ├── images
+│   │   ├── 20230116-161235-imgmigordiehoweintbridge--CREDIT-WindsorDetroit-Bridge-Authority.jpg
+│   │   ├── 3d-high-rise-building-complex-cgi.jpg
+│   │   ├── 3d-high-rise-building-complex-render.jpg
+│   │   ├── 83220.png
+│   │   ├── FrederickDouglassCropped.jpg
+│   │   ├── Hounenike-dam.jpg
+│   │   ├── JD4PXKJ6UJGFZPZ44YN7GCDUQQ.avif
+│   │   ├── Kurobe-dam.jpg
+│   │   ├── LinkedIn.avif
+│   │   ├── LongBeachCropped.jpg
+│   │   ├── Marunuma-dam.jpg
+│   │   ├── Miyagase-dam.jpg
+│   │   ├── facebook.avif
+│   │   ├── instagram.avif
+│   │   ├── melbourne-metro-tunnell-rshp-hassell-wwp-architects_dezeen_2364_col_3-1704x1136.jpg
+│   │   ├── metrovaartha-en_2023-10_2c5723ab-6d6d-4b79-abcf-2262c4b3a8ad_ReasiBridge_jpeg.avif
+│   │   ├── profile_picture.jpg
+│   │   ├── rausing-science-centre-walters-cohen-architecture-education-uk_dezeen_2364_col_3-1704x1704.jpg
+│   │   ├── rausing-science-centre-walters-cohen-architecture-education-uk_dezeen_2364_hero.jpg
+│   │   ├── sekyra-flowers-daniel-libeskind-housing-prague_dezeen_2364_col_5-1704x1144.jpg
+│   │   ├── siteicon.svg
+│   │   ├── studio-libeskind-boerentoren-office-conversion_dezeen_2364_col_3-1704x1065.jpg
+│   │   └── twitter.avif
+│   └── images.json
+├── src
+│   ├── App.tsx
+│   ├── components
+│   │   ├── ContactForm.tsx
+│   │   ├── EducationCard.tsx
+│   │   ├── ExperienceCard.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── SequenceGame.tsx
+│   │   └── SkillCard.tsx
+│   ├── context
+│   │   ├── ImageContext.tsx
+│   │   └── ImageProvider.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   ├── pages
+│   │   ├── Contact.tsx
+│   │   ├── Gallery.tsx
+│   │   ├── Game.tsx
+│   │   ├── Home.tsx
+│   │   ├── NotFound.tsx
+│   │   ├── Photo.tsx
+│   │   └── Resume.tsx
+│   ├── types.ts
+│   └── utils
+│       └── shuffle.ts
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
 ```

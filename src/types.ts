@@ -1,6 +1,7 @@
 export interface Image {
+    id: string,
     description: string,
-    url: string,
+    filename: string,
     category: string
 }
 
@@ -9,17 +10,20 @@ export interface Experience {
     position: string,
     companyName: string,
     location: string,
-    description: string
+    description: string,
+    displayOrder: number
 }
 
 export interface Education {
     period: string,
     institution: string,
     award: string,
-    description: string
+    description: string,
+    displayOrder: number
 }
 
 export interface Skill {
     skill: string,
-    items: string[]
+    items: string[],
+    displayOrder: number
 }

@@ -15,8 +15,10 @@ const Header = () => {
             <nav className="flex justify-between items-center p-4 md:p-6 relative">
                 
                 {/* Name */}
-                <div className="text-lg md:text-2xl font-semibold">
-                    Raphael Lam | <span className="font-thin">Project Civil Engineer</span>
+                <div className="text-lg md:text-xl font-semibold flex flex-col md:flex-row">
+                    <span>Raphael Lam</span>
+                    <span className="font-thin hidden md:inline mx-2">|</span>
+                    <span className="font-thin">Project Civil Engineer</span>
                 </div>
 
                 {/* Hamburger button (mobile only) */}
@@ -41,7 +43,7 @@ const Header = () => {
                     </li>
                     <li>
                         <Link to="/resume" className={navItemStyle} onClick={handleLinkClick}>
-                            Resume
+                            Résumé
                         </Link>
                     </li>
                     <li>

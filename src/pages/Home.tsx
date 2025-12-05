@@ -1,12 +1,12 @@
 const Home = () => {
     return (
-        <main className="flex flex-row">
-            <div className="bg-c2 flex-3 flex flex-col items-center justify-center">
+        <main className="flex flex-col md:flex-row">
+            <div className="bg-c2 flex-3 flex flex-col items-center justify-center py-10">
                 <img src={`${import.meta.env.BASE_URL}images/profile_picture.jpg`} className="w-50 h-50 rounded-full object-cover"/>
-                <div className="font-bold mt-5">Raphael Lam</div>
-                <div className="mt-5">Project Civil Engineer</div>
+                <div className="font-bold mt-5 text-5xl">Raphael Lam</div>
+                <div className="mt-5 text-3xl">Project Civil Engineer</div>
             </div>
-            <div className="flex-4 m-3  font-content">
+            <div className="flex-4 m-3 font-content">
                 <p className="mb-3 p-3">
                     As a dedicated Project Civil Engineer with over 15 years of professional experience, I specialize in the comprehensive design, management, and construction oversight of infrastructure projects including bridges, water dams, and commercial and residential buildings. Throughout my career, I have successfully contributed to all phases of project delivery from initial feasibility studies and detailed design through to construction supervision and final handover, ensuring projects meet strict safety, quality, and regulatory standards.
                 </p>
