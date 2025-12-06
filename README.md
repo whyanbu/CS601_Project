@@ -2,6 +2,8 @@
 
 A personal website built with React and TypeScript. The application presents a biography, résumé data, and a project gallery showcasing selected works.  
 
+Access URL: https://whyanbu.github.io/CS601_Project/  
+
 ## Table of Contents
 
 Features  
