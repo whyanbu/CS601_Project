@@ -1,6 +1,6 @@
 # Personal Webpage of Raphael Lam
 
-A personal website built with React and TypeScript. The application presents a biography, résumé data, and a project gallery showcasing selected works.  
+A personal portfolio website built with React and TypeScript. It features a biography section, structured résumé data, and a project gallery highlighting selected works. Note that some content is AI-generated and the information displayed on the site is fictional and for demonstration purposes only.  
 
 Access URL: https://whyanbu.github.io/CS601_Project/  
 
