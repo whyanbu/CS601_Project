@@ -14,7 +14,6 @@ const Resume = () => {
     useEffect(() => {
         const fetchExperience = async () => {
             const response = await fetch("https://cs601projectapi.vercel.app/experience");
-            console.log("response: ", response);
             const data: Experience[] = await response.json();
             setExperience(data.sort((a, b) => b.displayOrder - a.displayOrder));
         };
