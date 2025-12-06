@@ -86,6 +86,7 @@ npm run deploy
 
 ```
 CS601_Project
+my-personal-site
 ├── README.md
 ├── eslint.config.js
 ├── index.html
@@ -94,11 +95,8 @@ CS601_Project
 ├── public
 │   ├── constructionOrder.json
 │   ├── images
-│   │   ├── 20230116-161235-imgmigordiehoweintbridge--CREDIT-WindsorDetroit-Bridge-Authority.jpg
-│   │   ├── 3d-high-rise-building-complex-cgi.jpg
 │   │   ├── 3d-high-rise-building-complex-render.jpg
 │   │   ├── 83220.png
-│   │   ├── FrederickDouglassCropped.jpg
 │   │   ├── Hounenike-dam.jpg
 │   │   ├── JD4PXKJ6UJGFZPZ44YN7GCDUQQ.avif
 │   │   ├── Kurobe-dam.jpg
@@ -108,10 +106,8 @@ CS601_Project
 │   │   ├── Miyagase-dam.jpg
 │   │   ├── facebook.avif
 │   │   ├── instagram.avif
-│   │   ├── melbourne-metro-tunnell-rshp-hassell-wwp-architects_dezeen_2364_col_3-1704x1136.jpg
 │   │   ├── metrovaartha-en_2023-10_2c5723ab-6d6d-4b79-abcf-2262c4b3a8ad_ReasiBridge_jpeg.avif
 │   │   ├── profile_picture.jpg
-│   │   ├── rausing-science-centre-walters-cohen-architecture-education-uk_dezeen_2364_col_3-1704x1704.jpg
 │   │   ├── rausing-science-centre-walters-cohen-architecture-education-uk_dezeen_2364_hero.jpg
 │   │   ├── sekyra-flowers-daniel-libeskind-housing-prague_dezeen_2364_col_5-1704x1144.jpg
 │   │   ├── siteicon.svg
@@ -126,12 +122,13 @@ CS601_Project
 │   │   ├── ExperienceCard.tsx
 │   │   ├── Footer.tsx
 │   │   ├── Header.tsx
+│   │   ├── PageTitle.tsx
+│   │   ├── ScrollToTop.tsx
 │   │   ├── SequenceGame.tsx
 │   │   └── SkillCard.tsx
 │   ├── context
 │   │   ├── ImageContext.tsx
 │   │   └── ImageProvider.tsx
-│   ├── index.css
 │   ├── main.tsx
 │   ├── pages
 │   │   ├── Contact.tsx

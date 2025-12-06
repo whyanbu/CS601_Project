@@ -35,7 +35,7 @@ const Resume = () => {
 
     return (
         <div className="bg-c1 py-15">
-            <PageTitle text="Résumé" color={"c4"}/>
+            <PageTitle text="Résumé" className="before:text-c4"/>
             <div>
                 {experience.length === 0 ? "" : <div className="w-9/10 max-w-3xl text-center md:text-left mx-auto mt-10 text-3xl text-c4 font-bold">Experience</div>}
                 {experience.map((exp: Experience, idx: number) => <ExperienceCard key={idx} exp={exp}/>)}

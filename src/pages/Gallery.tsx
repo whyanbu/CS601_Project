@@ -22,7 +22,7 @@ const Gallery = () => {
 
     return (
         <div className="bg-c4 py-15 px-15">
-            <PageTitle text="Gallery" color={"c1"}/>
+            <PageTitle text="Gallery" className="before:text-c1"/>
 
             {/* filter drop down menu */}
             <div className="text-center font-content md:text-right mt-10">
@@ -42,7 +42,7 @@ const Gallery = () => {
                 {/* Gallery Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {images.filter(img => filter === defaultCategory || img.category === filter).map(img => (
-                        <Link to={`/photo/${img.id}`} className="product-list-item-wrap">
+                        <Link key={img.id} to={`/photo/${img.id}`} className="product-list-item-wrap">
                             <img
                                 key={img.id}
                                 src={`${import.meta.env.BASE_URL}images/${img.filename}`}

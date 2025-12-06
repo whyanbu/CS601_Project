@@ -22,7 +22,7 @@ const Photo = () => {
 
     return (
         <div className="flex flex-col w-9/10 mx-auto mt-10">
-            <PageTitle text="Photo" color={"c4"}/>
+            <PageTitle text="Photo" className="before:text-c4"/>
             <Link className="bg-c4 text-content text-white text-xl py-2 px-3 my-5 w-50 text-center rounded-2xl shadow-xl hover:bg-c2 transition" to="/gallery">
                 ← Back to Gallery
             </Link>
@@ -37,7 +37,7 @@ const Photo = () => {
             </p>
             {/* Category */}
             <p className="font-content text-c5 text-base my-4 mx-auto px-4 text-wrap text-center">
-                ({image.category})
+                (Category: {image.category})
             </p>
         </div>
     );
